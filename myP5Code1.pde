@@ -3,13 +3,15 @@ setup = function() {
 };
 
 //Background Images
-var caveSceneImage = loadImage("https://www.shutterstock.com/image-vector/vector-illustration-background-forest-scenery-600nw-1807427365.jpg");
+var apartmentImage = loadImage("https://theagencyre.com/blog/wp-content/uploads/2021/10/original.jpg");
 
-var forestImage = loadImage("https://t3.ftcdn.net/jpg/02/50/39/72/360_F_250397206_HuBj2V5oEytcqonzpzum4IjEjtAsZq3g.jpg");
+var forestImage = loadImage("https://cdn.britannica.com/75/191975-050-11C255AA/Woman-emotion.jpg");
+
+var suitImage = loadImage("https://popculturecomm348.wordpress.com/wp-content/uploads/2014/09/barneystinson.jpg")
 
 //Variable Declarations
-var sceneImage = caveSceneImage;
-var sceneText = "Where do you want to go?  [Press f for forest and c for cave]";
+var sceneImage = apartmentImage;
+var sceneText = "Let's get out of this apartment.  [Press f to get out of here!]";
 
 draw = function(){
     
@@ -19,11 +21,16 @@ draw = function(){
    if(keyPressed){
      if(key == 'f'){
        sceneImage = forestImage;   
-       sceneText = "No fox here.  [Press s to restart]";
+       sceneText = "What are you doing? you forgot to suit up! \ngo back and press g to suit up!  [Press s to restart]";
      } 
      if(key == 's'){
-      sceneImage = caveSceneImage;
-      sceneText = "Where do you want to go?  [Press f for forest and c for cave]";
+      sceneImage = apartmentImage;
+      sceneText = "Let's get out of this apartment.  [Press f to get out of here!]";
+    } 
+
+    if(key == 'g'){
+      sceneImage = suitImage;
+      sceneText = "Lookin good! now lets go.  [Press f to get out of here!]";
     } 
    }
   
