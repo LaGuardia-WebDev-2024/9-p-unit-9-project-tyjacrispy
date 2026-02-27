@@ -9,6 +9,8 @@ var forestImage = loadImage("https://cdn.britannica.com/75/191975-050-11C255AA/W
 
 var suitImage = loadImage("https://popculturecomm348.wordpress.com/wp-content/uploads/2014/09/barneystinson.jpg")
 
+var streetImage = loadImage("https://i.ytimg.com/vi/uYWTfPBx9W4/maxresdefault.jpg")
+
 //Variable Declarations
 var sceneImage = apartmentImage;
 var sceneText = "Let's get out of this apartment.  [Press f to get out of here!]";
@@ -30,7 +32,12 @@ draw = function(){
 
     if(key == 'g'){
       sceneImage = suitImage;
-      sceneText = "Lookin good! now lets go.  [Press f to get out of here!]";
+      sceneText = "Lookin good! now lets go.  [Press L to get out of here!]";
+    } 
+
+    if(key == 'l'){
+      sceneImage = streetImage;
+      sceneText = "Alrighty now do you wanna go to work or to the bar!\n [Press W for work or B for bar]";
     } 
    }
   
