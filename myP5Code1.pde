@@ -19,6 +19,14 @@ var dougImage = loadImage("https://m.media-amazon.com/images/M/MV5BMTc0MzUyOTk0N
 
 var fightImage = loadImage("https://static.tvtropes.org/pmwiki/pub/images/himym_4x10.jpg")
 
+var victoryImage = loadImage("https://static0.srcdn.com/wordpress/wp-content/uploads/2021/09/Barney-Ted-Bartenders-copy.jpg?q=50&fit=crop&w=825&dpr=1.5")
+
+var jobImage = loadImage("https://static0.srcdn.com/wordpress/wp-content/uploads/2021/08/How-I-Met-Your-Mother-Neil-Patrick-Harris-Barney-Smiling-Office.jpg?q=50&fit=crop&w=825&dpr=1.5")
+
+var roofImage = loadImage("https://static0.srcdn.com/wordpress/wp-content/uploads/2021/08/Conference-Calls.png?q=50&fit=crop&w=825&dpr=1.5")
+
+var boredImage = loadImage("https://www.slashfilm.com/img/gallery/casting-neil-patrick-harris-in-how-i-met-your-mother-completely-changed-barneys-character/intro-1660566751.jpg")
+
 //Variable Declarations
 var sceneImage = apartmentImage;
 var sceneText = "Let's get out of this apartment.  [Press f to get out of here!]";
@@ -61,9 +69,35 @@ draw = function(){
 
      if(key == 'h'){
       sceneImage = fightImage;
-      sceneText = "doug brings you a drink but he needs you to fight with him! \ngo fight with doug! [h to fight!]";
+      sceneText = "you won! free drinks for all! \n[press e to enjoy the fruits of your labor]";
   
     }
+
+     if(key == 'e'){
+      sceneImage = victoryImage;
+      sceneText = "You had a great night! (Ted ending)";
+    }
+
+     if(key == 'w'){
+      sceneImage = workImage;
+      sceneText = "Goliath National Bank! [press v to head on in]";
+    }
+
+     if(key == 'v'){
+      sceneImage = jobImage;
+      sceneText = "Marshall is calling! head up to the roof? \n[r to go up n to stay inside]";
+    }
+
+     if(key == 'r'){
+      sceneImage = roofImage;
+      sceneText = "have a great time with marshall! (marshall ending)";
+    }
+
+    if(key == 'n'){
+      sceneImage = boredImage;
+      sceneText = "work is so boring lets go to the bar! [b to go to the bar!]";
+    }
+
    }
   
 };
