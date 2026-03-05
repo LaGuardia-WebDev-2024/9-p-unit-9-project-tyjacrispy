@@ -13,7 +13,7 @@ var streetImage = loadImage("https://i.ytimg.com/vi/uYWTfPBx9W4/maxresdefault.jp
 
 var barImage = loadImage("https://cdnb.artstation.com/p/assets/covers/images/016/610/039/large/thomas-djalloul-shot-0.jpg?1552813099")
 
-var workImage = loadImage("https://static.wikia.nocookie.net/himym/images/b/b2/CompletedGNBTower.jpg/revision/latest/scale-to-width-down/1200?cb=20121226025415")
+var workImage = loadImage("https://i.redd.it/if-you-think-the-vfx-of-that-goliath-national-bank-building-v0-sb6yjduyatpc1.jpg?width=1920&format=pjpg&auto=webp&s=ed9ce5bd064d63976745895b08922c43280d56dc")
 
 var dougImage = loadImage("https://m.media-amazon.com/images/M/MV5BMTc0MzUyOTk0NF5BMl5BanBnXkFtZTcwNDA2OTUxMg@@._V1_.jpg")
 
